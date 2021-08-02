@@ -25,7 +25,7 @@ To generate STD from the previously presented dataset the following four STDG ap
 - Gaussian Multivariate (GM): https://github.com/sdv-dev/Copulas
 - Synthetic Data Vault (SDV): https://github.com/sdv-dev/SDV
 - Conditional Tabular Generative Adversarial Network (CTGAN): https://github.com/sdv-dev/CTGAN
-- Wasserstein Generative Adversarial Network with Gradient Penalty (WGANGP): 4.	https://github.com/ydataai/ydata-synthetic
+- Wasserstein Generative Adversarial Network with Gradient Penalty (WGANGP): https://github.com/ydataai/ydata-synthetic
 
 ## Contact
 
