@@ -1,0 +1,11 @@
+pandas
+seaborn
+numpy
+matplotlib
+sklearn
+scipy
+copulas
+umap-learn
+ctgan
+sdv
+ydata-synthetic
