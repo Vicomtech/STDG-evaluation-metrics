@@ -6,8 +6,16 @@ In this repository you can find a pipeline to evaluate Synthetic Tabular Data (S
 
 - EVALUATION FUNCTIONS: the folder contains 3 folders with the python scripts that contains the evaluation functions for the three different dimensions.
   - RESEMBLANCE: Folder containing the .py files with the evaluation functions of resemblance dimension.
+    - *univariate_resamblance.py*: python file containing the evaluation functions for the univariate resemblance analysis (URA).
+    - *multivariate_resemblance.py*: python file containing the evaluation functions for the multivariate resemblance analysis (MRA).
+    - *dimensional_resemblance.py*: python file containing the evaluation functions for the dimensional resemblance analysis (DRA).
+    - *data_labelling.py*: python file containing the evaluation functions for the data labelling analysis (DLA).
   - UTILITY: Folder containing the .py files with the evaluation functions of utility dimension.
+    - *utility_evaluation.py*: python file containing the evaluation functions for the train on real, test on real (TRTR) and train on synthetic, test on real (TSTR) analyses.
   - PRIVACY: Folder containing the .py files with the evaluation functions of privacy dimension.
+    - *similarity_evaluation.py*: python file containing the evaluation functions for the similarity evaluation analysis (SEA).
+    - *membership_resemblance.py*: python file containing the evaluation functions for the membership inference attack (MIA) simulation.
+    - *attribute_inference.py*: python file containing the evaluation functions for the attribute inference attack (AIA) simulation.
 
 ## Used datasets
 
