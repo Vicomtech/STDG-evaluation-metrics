@@ -1,6 +1,8 @@
 # Standardised Metrics and Methods for Synthetic Tabular Data Evaluation
 
-In this repository you can find a pipeline to evaluate Synthetic Tabular Data (STD) generated with different approaches. The main objective of the repository is to propose standardised metrics and methods for STD evaluation in three different dimensions: resemblance, utility and privacy. 
+In this repository you can find a pipeline to evaluate Synthetic Tabular Data (STD) generated with different approaches. The main objective of the repository is to propose standardised metrics and methods for STD evaluation in three different dimensions: resemblance, utility and privacy. The next image show the taxonomy of the proposed metrics and methods for STD evaluation.
+
+![Proposed pipeline for STD evaluation](https://github.com/Vicomtech/STDG-evaluation-metrics/blob/main/evaluation_pipeline.png)
 
 ## Repository Structure
 
