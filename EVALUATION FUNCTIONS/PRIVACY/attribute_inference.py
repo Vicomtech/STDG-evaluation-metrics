@@ -238,3 +238,32 @@ class DataPreProcessor :
 
         else :
             return self.num_scaler.transform(test_data[self.numerical_columns])
+
+
+def identified_attributes_percentage(results_data, results_columns) :
+    """Calculate the percentage of identified attributes
+    
+    Parameters
+    ----------
+    results_data : pandas.core.frame.DataFrame
+        the results of the AIA simulation
+
+    results_columns : list
+        list of column names for the risk attributes
+    
+    Returns
+    -------
+    float
+        the percentage of identified attributes
+    """
+    
+    #identify the attributes that have been correctly identified
+    results = results_data[results_columns].mode().transpose()[0]
+    for c in results_columns :
+        if 'rmse' in c :
+            results[c] = True if results[c] == 0 else False
+        else :
+            results[c] = True if results[c] == 1 else False
+                
+    #compute the proportion of correctly identified attributes
+    return np.round(np.sum(results)/len(results),2)

@@ -114,3 +114,32 @@ def get_categorical_correlations(df) :
 
     #return the values
     return normalized_chi2, norm
+
+
+def compute_mra_score(real, synthetic) :
+    """Computes the percentage of correlations that are preserved in synthetic data.
+    
+    Parameters
+    ----------
+    real : pandas.core.frame.DataFrame
+        The dataframe with the correlations of real data
+        
+    synthetic : pandas.core.frame.DataFrame
+        The dataframe with the correlations of synthetic data
+
+    Returns
+    -------
+    numpy.float64
+        a value that indicates the percentage of correlations that are preserved in synthetic data
+    """
+    
+    #get the correlations differences between real data and synthetic data
+    diff = abs(real - synthetic)
+    diffs = diff.values[np.triu_indices(len(diff),k=1)]
+
+    #compute the percentage of preserved correlations
+    total_cors = len(diffs)
+    preserved_cors = len(diffs[diffs < 0.1])
+    
+    #return the percentage of correlations preserved in synthetic data (rounded to two decimals)
+    return np.round(preserved_cors/total_cors,2)
