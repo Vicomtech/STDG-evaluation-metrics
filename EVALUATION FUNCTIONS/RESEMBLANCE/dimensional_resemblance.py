@@ -12,8 +12,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.manifold import Isomap
-from umap import UMAP
-import matplotlib.patches as mpatches
 
 
 def preprocess_data(data) :
@@ -165,68 +163,35 @@ def isomap_transform_on_batch(data_scaled, labels) :
     return iso_df
 
 
-def umap_transform(data_scaled, labels) :
+def dra_distance(real,synthetic) :
 
-    """Compute the UMAP transform from a scaled data.
+    """Compute the proposed DRA distance, which is a distance metric that indicates the distance between two dimensionality dimension plots. The metric is the joint distance between the baricenters distance and spread distance.
     
     Parameters
     ----------
-    data_scaled : numpy.ndarray
-        A matrix with the scaled data to transform
-
-    labels : numpy.ndarray
-        Labels to assign to the transformed data (0 for real and 1 for synthetic)
+    real : pandas.core.frame.DataFrame
+        A dataframe with the dimensionality results (PCA or ISOMAP) of the real data.
+        
+    synthetic: pandas.core.frame.DataFrame
+        A dataframe with the dimensionality results (PCA or ISOMAP) of the synthetic data.
 
     Returns
     -------
-    pandas.core.frame.DataFrame
-        a dataframe with the transformed data labelled
+    numpy.float64
+        the computed DRA distance metric.
     """
-
-    #compute the UMAP transform
-    umap_transform = UMAP().fit_transform(data_scaled)
-
-    #append labels to the transformed data
-    umap = np.append(umap_transform, labels, axis=1)
-
-    #return a dataframe with the transformed data
-    return pd.DataFrame(data=umap, columns=['PC1','PC2','Label'])
-
-
-def umap_transform_on_batch(data_scaled, labels) :
-
-    """Compute the UMAP transform on batch from a scaled data.
     
-    Parameters
-    ----------
-    data_scaled : numpy.ndarray
-        A matrix with the scaled data to transform
-
-    labels : numpy.ndarray
-        Labels to assign to the transformed data (0 for real and 1 for synthetic)
-
-    Returns
-    -------
-    pandas.core.frame.DataFrame
-        a dataframe with the transformed data labelled
-    """
-
-    #initialize dataframe to save the values of the transformation
-    umap_df = pd.DataFrame(columns=['PC1','PC2','Label'])
-
-    #loop to iterate over all batches of data
-    for (b, y) in zip(batch(data_scaled,10000),batch(labels,10000)) :
-
-        #transform the batch of data
-        umap_transform = UMAP().fit_transform(b)
-
-        #append the labels of the data
-        umap_new = np.append(umap_transform, y, axis=1)
-
-        #append the transformation of the actual batch to the dataframe that contains the transformation of all the batches
-        umap_new = pd.DataFrame(data=umap_new, columns=['PC1','PC2','Label'])
-        umap_df = umap_df.append(umap_new, ignore_index=True)
-
-    #return a dataframe with the transformed data
-    return umap_df
+    #compute baricenters distance
+    bc_real=np.mean(real[['PC1','PC2']].values)
+    bc_synth=np.mean(synthetic[['PC1','PC2']].values)
+    dist_real_synth = np.linalg.norm(bc_real - bc_synth)
+    
+    #compute spread distance
+    spread_real=np.std(real[['PC1','PC2']].values)
+    spread_synth=np.std(synthetic[['PC1','PC2']].values)
+    dist_spread_real_synth = np.abs(spread_real-spread_synth)
+    
+    #compute joint distance
+    alpha=0.05
+    return np.round(alpha*dist_real_synth + (1-alpha)*dist_spread_real_synth,4)
 
