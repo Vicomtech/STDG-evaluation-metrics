@@ -43,6 +43,3 @@ If you have any question or suggestion, do not hesitate to contact us at the fol
 
 - Mikel Hernandez: mhernandez@vicomtech.org
 - Gorka Epelde: gepelde@vicomtech.org
-- Ane Alberdi: aalberdiar@mondragon.edu
-- Rodrigo Cilla: rodri.cilla@gmail.com
-- Debbie Rankin: d.rankin1@ulster.ac.uk
