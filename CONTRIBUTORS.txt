@@ -1,0 +1,12 @@
+# This is the official list of Standardised Metrics and Methods for Synthetic Tabular Data Evaluation project contributors.
+# The LICENSE file lists the copyright holders; this file
+# lists people. 
+#
+# Names should be added to this file as:
+#     Name <email address>
+
+#     Mikel Hernandez <mhernandez@vicomtech.org>
+#     Gorka Epelde <gepelde@vicomtech.org>
+#     Rodrigo Cilla <rodri.cilla@gmail.com>
+#     Ane Alberdi <aalberdiar@mondragon.edu>
+#     Debbie Rankin <d.rankin1@ulster.ac.uk>
