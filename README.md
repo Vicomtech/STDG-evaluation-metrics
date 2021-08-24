@@ -18,10 +18,10 @@ In this repository you can find a pipeline to evaluate Synthetic Tabular Data (S
     - *similarity_evaluation.py*: python file containing the evaluation functions for the similarity evaluation analysis (SEA).
     - *membership_resemblance.py*: python file containing the evaluation functions for the membership inference attack (MIA) simulation.
     - *attribute_inference.py*: python file containing the evaluation functions for the attribute inference attack (AIA) simulation.
- - PREPROCESSING: the folder contains 2 python files with some functions for data preprocessing for synthetic tabular data generation (STDG)
+- PREPROCESSING: the folder contains 2 python files with some functions for data preprocessing for synthetic tabular data generation (STDG)
   - *gaussian_multivariate.py*: python file containing the preprocessing functions for Gaussian Multivariate (GM) STDG approach.
   - *preprocessing.py*: python file containing the preprocessing functions for some STDG approaches.
- - notebooks: the folder contains 6 subfolders, one for each used dataset, that contains notebooks examples for STDG and STD evaluation. For each subfolder the next files and folders can be found:
+- notebooks: the folder contains 6 subfolders, one for each used dataset, that contains notebooks examples for STDG and STD evaluation. For each subfolder the next files and folders can be found:
   - *EDA and Data Split Dataset X.ipynb*: notebook in which a brief exploratory data analysis (EDA) and a data split (80% for STDG and 20% for utility evaluation) is performed.
   - Synthetic data generation: folder that contains the STDG approaches for each dataset.
     - *CTGAN Dataset X.ipynb*: notebook to generate STD using CTGAN approach.
