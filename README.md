@@ -18,6 +18,33 @@ In this repository you can find a pipeline to evaluate Synthetic Tabular Data (S
     - *similarity_evaluation.py*: python file containing the evaluation functions for the similarity evaluation analysis (SEA).
     - *membership_resemblance.py*: python file containing the evaluation functions for the membership inference attack (MIA) simulation.
     - *attribute_inference.py*: python file containing the evaluation functions for the attribute inference attack (AIA) simulation.
+- PREPROCESSING: the folder contains 2 python files with some functions for data preprocessing for synthetic tabular data generation (STDG)
+  - *gaussian_multivariate.py*: python file containing the preprocessing functions for Gaussian Multivariate (GM) STDG approach.
+  - *preprocessing.py*: python file containing the preprocessing functions for some STDG approaches.
+- notebooks: the folder contains 6 subfolders, one for each used dataset, that contains notebooks examples for STDG and STD evaluation. For each subfolder the next files and folders can be found:
+  - *EDA and Data Split Dataset X.ipynb*: notebook in which a brief exploratory data analysis (EDA) and a data split (80% for STDG and 20% for utility evaluation) is performed.
+  - Synthetic data generation: folder that contains the STDG approaches for each dataset.
+    - *CTGAN Dataset X.ipynb*: notebook to generate STD using CTGAN approach.
+    - *GM Dataset X.ipynb*: notebook to generate STD using GM approach.
+    - *SDV Dataset X.ipynb*: notebook to generate STD using SDV approach.
+    - *WGANGP Dataset X.ipynb*: notebook to generate STD using WGANGP approach.
+  - Synthetic data evaluation: folder that contains fodlers with the notebooks for STD evaluation for each dataset. The next folders can be found:
+    - Privacy: contains the notebooks for the privacy evaluation of STD.
+      - *1_Similarity_Evaluation_DatasetX.ipynb*: notebook for the similarity evaluation analysis (SEA).
+      - *2_Membership_Inference_DatasetX.ipynb*: notebook for the membership inference attack (MIA).
+      - *3_Attribute_Inference_Test_DatasetX.ipynb*: notebook for the attribute inference attack (AIA).
+    - Resemblance: contains the notebooks for the resemblance evaluation of STD.
+      - *1_Univariate_Resemblance_DatasetX.ipynb*: notebook for the univariate resemblance analysis (URA).
+      - *2_Multivariate_Resemblance_DatasetX.ipynb*: notebook for the multivariate resemblance analysis (MRA).
+      - *3_Dimensional_Resemblance_DatasetX.ipynb*: notebook for the dimensional resemblance analysis (DRA).
+      - *4_Data_Labelling_Resemblance_DatasetX.ipynb*: notebook for the data labelling analysis (DLA).
+    - Utility: contains the notebooks for the utility evaluation of STD.
+      - *TRTR Dataset X.ipynb*: notebook for Train on Real Test on Real (TRTR) analysis.
+      - *TRTR and TSTR Results Comparison.ipynb*: notebook for the comparison of the results when TRTR and Train on Synthetic Test on Real (TSTR).
+      - *TSTR CTGAN Dataset X.ipynb*: notebook for TSTR analysis with STD generated with CTGAN approach.
+      - *TSTR GM Dataset X.ipynb*: notebook for TSTR analysis with STD generated with GM approach.
+      - *TSTR SDV Dataset X.ipynb*: notebook for TSTR analysis with STD generated with SDV approach.
+      - *TSTR WGANGP Dataset X.ipynb*: notebook for TSTR analysis with STD generated with WGANGP approach.
 
 ## Used datasets
 
