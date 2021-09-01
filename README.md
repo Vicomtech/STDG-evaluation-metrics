@@ -64,6 +64,19 @@ To generate STD from the previously presented dataset the following four STDG ap
 - Conditional Tabular Generative Adversarial Network (CTGAN): https://github.com/sdv-dev/CTGAN
 - Wasserstein Generative Adversarial Network with Gradient Penalty (WGANGP): https://github.com/ydataai/ydata-synthetic
 
+## Acknowledgments
+
+To acknowledge code and examples of this repository (*[Standardised Metrics and Methods for Synthetic Tabular Data Evaluation](https://github.com/Vicomtech/STDG-evaluation-metrics)*) in an academic publication, please cite
+
+> Standardised Metrics and Methods for Synthetic Tabular Data Evaluation
+>
+> Mikel Hernandez, Gorka Epelde, Ane Alberdi, Rodrigo Cilla and Debbie Rankin
+>
+> Pre-print at Zenodo DOI:
+> [10.5281/zenodo.5355961](https://zenodo.org/badge/DOI/10.5281/zenodo.5355961)
+
+**Note:** Currently manuscript is under revision, this section will be updated when we have updates. If you use or find this repository helpful, please take the time to star this repository on Github. This is an easy way for us to assess adoption and it can help us obtain future funding for the project.
+
 ## Contact
 
 If you have any question or suggestion, do not hesitate to contact us at the following addresses:
