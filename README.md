@@ -1,3 +1,9 @@
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+[![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg)
+![](https://img.shields.io/badge/python-3.7%20%7C%203.8-blue)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 # Standardised Metrics and Methods for Synthetic Tabular Data Evaluation
 
 In this repository you can find a pipeline to evaluate Synthetic Tabular Data (STD) generated with different approaches. The main objective of the repository is to propose standardised metrics and methods for STD evaluation in three different dimensions: resemblance, utility and privacy. The next image show the taxonomy of the proposed metrics and methods for STD evaluation.
@@ -21,6 +27,10 @@ In this repository you can find a pipeline to evaluate Synthetic Tabular Data (S
 - PREPROCESSING: the folder contains 2 python files with some functions for data preprocessing for synthetic tabular data generation (STDG)
   - *gaussian_multivariate.py*: python file containing the preprocessing functions for Gaussian Multivariate (GM) STDG approach.
   - *preprocessing.py*: python file containing the preprocessing functions for some STDG approaches.
+- REAL DATASETS: the folder contains the real datasets that have been used for training and evaluating the STDG approaches.
+  - *TEST_DATASETS*: the folder contains the real test datasets used for the evaluation of utility of the STD.
+  - *TRAIN_DATASETS*: the folder contains the real train datasets used for training and evaluating the STDG approaches.
+- SYNTHETIC DATASETS: the folder contains the synthetically generated datasets with each approach.
 - notebooks: the folder contains 6 subfolders, one for each used dataset, that contains notebooks examples for STDG and STD evaluation. For each subfolder the next files and folders can be found:
   - *EDA and Data Split Dataset X.ipynb*: notebook in which a brief exploratory data analysis (EDA) and a data split (80% for STDG and 20% for utility evaluation) is performed.
   - Synthetic data generation: folder that contains the STDG approaches for each dataset.
