@@ -2,7 +2,6 @@
 [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg)
 ![](https://img.shields.io/badge/python-3.7%20%7C%203.8-blue)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 # Standardised Metrics and Methods for Synthetic Tabular Data Evaluation
 
