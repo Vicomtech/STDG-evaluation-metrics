@@ -16,7 +16,7 @@ authors:
 - family-names: "Rankin"
   given-names: "Debbie"
   orcid: "https://orcid.org/0000-0003-2110-0599"
-title: "Standardised Metrics and Methods for Synthetic Tabular Data Evaluation"
-doi: 10.36227/techrxiv.16610896.v1
+title: "Synthetic Tabular Data Evaluation in the Health Domain Covering Resemblance, Utility, and Privacy Dimensions"
+doi: 10.1055/s-0042-1760247
 version: 1.0.0
 url: "https://github.com/Vicomtech/STDG-evaluation-metrics"
