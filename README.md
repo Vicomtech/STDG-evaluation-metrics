@@ -77,12 +77,12 @@ To generate STD from the previously presented dataset the following four STDG ap
 
 To acknowledge code and examples of this repository (*[Standardised Metrics and Methods for Synthetic Tabular Data Evaluation](https://github.com/Vicomtech/STDG-evaluation-metrics)*) in an academic publication, please cite
 
-> Standardised Metrics and Methods for Synthetic Tabular Data Evaluation
+> Synthetic Tabular Data Evaluation in the Health Domain Covering Resemblance, Utility, and Privacy Dimensions
 >
 > Mikel Hernandez, Gorka Epelde, Ane Alberdi, Rodrigo Cilla and Debbie Rankin
 >
-> Pre-print at TechRxiv DOI:
-> [10.36227/techrxiv.16610896.v1](https://doi.org/10.36227/techrxiv.16610896.v1)
+> Published at Methods of Methods of Information in Medicine DOI:
+> [10.1055/s-0042-1760247](https://doi.org/10.1055/s-0042-1760247)
 
 **Note:** Currently manuscript is under revision, this section will be updated when we have updates. If you use or find this repository helpful, please take the time to star this repository on Github. This is an easy way for us to assess adoption and it can help us obtain future funding for the project.
 
