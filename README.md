@@ -84,7 +84,7 @@ To acknowledge code and examples of this repository (*[Standardised Metrics and 
 > Published at Methods of Methods of Information in Medicine DOI:
 > [10.1055/s-0042-1760247](https://doi.org/10.1055/s-0042-1760247)
 
-**Note:** Currently manuscript is under revision, this section will be updated when we have updates. If you use or find this repository helpful, please take the time to star this repository on Github. This is an easy way for us to assess adoption and it can help us obtain future funding for the project.
+**Note:** If you use or find this repository helpful, please take the time to star this repository on Github. This is an easy way for us to assess adoption and it can help us obtain future funding for the project.
 
 ## Contact
 
